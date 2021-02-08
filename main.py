@@ -13,11 +13,11 @@ from joblib import dump, load
 
 # Load environment
 climate_zone = 1
-data_path = Path("CityLearn/data/Climate_Zone_"+str(climate_zone))
+data_path = Path("./data/Climate_Zone_"+str(climate_zone))
 building_attributes = data_path / 'building_attributes.json'
 weather_file = data_path / 'weather_data.csv'
 solar_profile = data_path / 'solar_generation_1kW.csv'
-building_state_actions = 'buildings_state_action_space.json'
+building_state_actions = './buildings_state_action_space.json'
 building_id = ["Building_1","Building_2","Building_3","Building_4","Building_5","Building_6","Building_7","Building_8","Building_9"]
 objective_function = ['ramping','1-load_factor','average_daily_peak','peak_demand','net_electricity_consumption','quadratic']
 
