@@ -13,7 +13,7 @@ from joblib import dump, load
 
 # Load environment
 climate_zone = 1
-data_path = Path("data/Climate_Zone_"+str(climate_zone))
+data_path = Path("CityLearn/data/Climate_Zone_"+str(climate_zone))
 building_attributes = data_path / 'building_attributes.json'
 weather_file = data_path / 'weather_data.csv'
 solar_profile = data_path / 'solar_generation_1kW.csv'
